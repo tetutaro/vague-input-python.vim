@@ -29,8 +29,8 @@ function! vagueinputpython#Configure()
         \ asyncomplete#force_refresh()
     inoremap <silent><expr> <S-TAB>
         \ pumvisible() ? "\<C-p>" : "\<C-d>"
-    nnoremap <silent><buffer> [[ ?^class\\|^\s*def<CR>
-    nnoremap <silent><buffer> ]] /^class\\|^\s*def<CR>
+    nnoremap <silent><buffer> [[ ?^class\\|^\s*def<CR>:noh<CR>
+    nnoremap <silent><buffer> ]] /^class\\|^\s*def<CR>:noh<CR>
 endfunction
 
 let &cpo = s:save_cpo
